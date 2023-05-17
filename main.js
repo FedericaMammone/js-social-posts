@@ -112,3 +112,19 @@ const likeButtons = document.querySelectorAll(".like-button")
 console.log(likeButtons);
 
 
+// creo il ciclo e aggiungo evento al click
+likeButtons.forEach((element, i) => {
+    element.addEventListener('click',
+        function(event){
+            event.preventDefault()
+            element.classList.add("like-button--liked");
+            let contatoreIesimo = counters[i];
+            let valoreContatore = parseInt(contatoreIesimo.innerHTML);
+            console.log(valoreContatore);
+            valoreContatore++;
+            contatoreIesimo.innerHTML = valoreContatore;
+        }
+    )
+
+});
+
