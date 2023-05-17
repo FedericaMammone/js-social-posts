@@ -103,3 +103,12 @@ posts.forEach(element => {
     contenitore.innerHTML += post;
 });
 
+// seleziono contatore like
+const counters = document.querySelectorAll(".js-likes-counter");
+console.log(counters);
+
+// selezione bottone like
+const likeButtons = document.querySelectorAll(".like-button")
+console.log(likeButtons);
+
+
